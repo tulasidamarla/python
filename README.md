@@ -61,5 +61,9 @@
     - This PVM reads byte code one line at a time and translates into machine code.
     - While OS executes machine code, PVM translates byte code to machine code and saves into temp memory.
     - PVM is an improved version of interpreter because in a typical interpreter scenario while OS executes machine code interpreter sits idle.
+- Source code does not contain all the information that the virtual machine needs.
+  - The virtual machine locates functions such as print in library modules. Generally we need not worry about library modules.
+  - When specialized tasks, such as graphics programming are required, we may need to install the required libraries. The details depend on the Python environment.
+  
 
   <img src="images/python_interpreter.png" alt="Python Interpreter" align="middle" width="70%">
