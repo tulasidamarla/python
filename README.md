@@ -9,10 +9,11 @@
 
 - Create a new file named hello.py and write the below content
 
-
+    ```
     # My first Python program. 
     print("Hello, World!")
-
+    ```
+  
 ## Executing a program
 
 - A Python program is executed using the Python interpreter.
