@@ -33,3 +33,17 @@
         >>>
 
 - The >>> at the bottom of the output is the prompt.
+- After typing an instruction and press the Enter key, the code is immediately executed by the Python interpreter. For ex,
+
+        >>> print("Hello, World!") 
+        Hello World
+        >>>
+
+- Interactive mode is very useful.
+- It allows experimenting and test individual Python instructions to see what happens.
+- It can be used as a simple calculator.
+
+        >>> 7035 * 0.15 
+        1055.25
+        >>>
+
