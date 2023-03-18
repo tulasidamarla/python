@@ -47,3 +47,19 @@
         1055.25
         >>>
 
+## The Python Interpreter
+
+- Typically, a compiler or an interpreter converts source code into machine code which can be executed by OS.
+- Compiler converts source code into machine code and stores it in a file, so that it can be executed whenever needed.
+- Interpreted languages don't store machine code in a file. Interpreter converts source code into machine code line by line during execution of the program.
+- The python interpreter contains two parts
+  - Compiler
+    - This compiler unlike typical compilers converts source code into byte code(This is like java byte code) instead of machine code.
+  - Virtual machine
+    - This python virtual machine is a just-in-time compiler which converts byte code into machine code that can be executed by OS.
+    - This just-in-time compiler(PVM) is not a typical interpreter. This PVM is a different software for each OS like Windows, MAC and Linux.
+    - This PVM reads byte code one line at a time and translates into machine code.
+    - While OS executes machine code, PVM translates byte code to machine code and saves into temp memory.
+    - PVM is an improved version of interpreter because in a typical interpreter scenario while OS executes machine code interpreter sits idle.
+
+  <img src="images/python_interpreter.png" alt="Python Interpreter" align="middle" width="70%">
