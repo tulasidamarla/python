@@ -67,3 +67,58 @@
   
 
   <img src="images/python_interpreter.png" alt="Python Interpreter" align="middle" width="70%">
+
+## Analyzing first program
+
+- The first line is a comment. Comments begin with `#`.
+- The second line contains a statement `print("Hello World!")`
+  - print is a python library function.
+  - Arguments in `print` function are enclosed in parentheses;multiple arguments are separated by commas;
+  - The contents of a string argument should be inside quotation marks. Both single and double quotes are allowed.
+  - Numerical values can also printed. For ex, `print(3+4)`
+  - Multiple values can be printed. For ex, `print("The answer is", 6 * 7)`
+  - If no arguments are given to the print function, it starts a new line. For ex, `print()`
+
+## Errors
+
+- What happens if you make a typing error such as `print("Hello, World!)`
+- Note the missing quotation marks at the end of the greeting.
+- When the program runs, the interpreter will stop and display the following message
+  
+```
+  File "hello.py", line 2 
+    print("Hello, World) 
+                       ^
+  SyntaxError: EOL while scanning string literal
+  ```
+- This is a compile-time error.
+- Something is wrong according to the rules of the language, and the error is detected before the program is actually run.
+- For this reason, compile-time errors are sometimes called syntax errors.
+- When such an error is found, no executable program is created.
+- We must fix the error and attempt to run the program again.
+- The interpreter is quite picky, and it is common to go through several rounds of fixing compile-time errors 
+  before the program runs for the first time.
+- The interpreter is not very smart and often provides no help in identifying the syntax error. 
+  For example, suppose you forget both quotation marks around a string `print(Hello, World!)`.
+  The error report looks like this:
+  ```
+  File "hello.py", line 2 
+    print(Hello, World!)
+                       ^ 
+  SyntaxError: invalid syntax
+  ```
+
+## Runtime Error
+
+- Some errors can only be found when the program executes.
+- For example, suppose your program includes the statement `print(1 / 0)`
+- This statement does violates the rules of python language, and the program will start running.
+- When the division by zero occurs, the program will stop and display the following error message:
+```
+Traceback (most recent call last):
+  File "hello.py", line 3, in <module>
+ZeroDivisionError: int division or modulo by zero
+```
+- This is called an exception. Some people use the term logic error instead of run-time error
+
+https://horstmann.com/codecheck/pylabs.html
