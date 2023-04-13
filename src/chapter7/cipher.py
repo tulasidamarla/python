@@ -30,6 +30,7 @@ def main():
 
         else:
             # It is a file name.
+            print("its a file name")
             files = files + 1
             if files == 1:
                 inFile = arg
@@ -37,7 +38,8 @@ def main():
                 outFile = arg
 
     # There must be two files
-    if files != 2:
+    if files < 2:
+        print("files", files)
         usage()
         return
 
