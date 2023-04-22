@@ -5,6 +5,9 @@
 def main():
     for string in permutations("eat"):
         print(string)
+    print("-----")
+    for string in permutations("beat"):
+        print(string)
 
 
 ## Gets all permutations of a given word.
@@ -26,7 +29,6 @@ def permutations(word):
 
             # Generate all permutations of the simpler word.
             shorterPermutations = permutations(shorter)
-            print("short permutations", shorterPermutations)
 
             # Add the removed character to the front of each permutation
             # of the simpler word.
