@@ -112,7 +112,7 @@
 
 - Some errors can only be found when the program executes.
 - For example, suppose your program includes the statement `print(1 / 0)`
-- This statement does violates the rules of python language, and the program will start running.
+- This statement does not violate the rules of python language, and the program will start running.
 - When the division by zero occurs, the program will stop and display the following error message:
 ```
 Traceback (most recent call last):
