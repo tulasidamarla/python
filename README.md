@@ -40,7 +40,7 @@
         >>>
 
 - Interactive mode is very useful.
-- It allows experimenting and test individual Python instructions to see what happens.
+- It allows experimenting and test individual Python instructions to see the result.
 - It can be used as a simple calculator.
 
         >>> 7035 * 0.15 
